@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="20dp"
+    android:layout_marginHorizontal="10dp"
+    android:padding="15dp"
+    android:paddingRight="0dp"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:paddingVertical="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Game name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/gameImage"
+            android:layout_width="185dp"
+            android:layout_height="150dp" />
+
+        <LinearLayout
+            android:id="@+id/infoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gameRating"
+                android:paddingVertical="5dp"
+                android:layout_marginLeft="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="@string/game_rating_label" />
+
+            <TextView
+                android:id="@+id/gameMetacritic"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:paddingVertical="5dp"
+                android:textSize="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:fontFamily="monospace"
+                android:layout_height="wrap_content"
+                android:text="@string/game_metacritic_label"/>
+
+            <TextView
+                android:id="@+id/gameReleased"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:paddingVertical="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="12dp"
+                android:fontFamily="monospace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/game_released_label"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
